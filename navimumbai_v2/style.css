@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root, html, body{
+    min-height: 100%;
+    width: 100%;
+    font-family: Montserrat;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero-section{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-color: #8F0000;
+}
+.hero-img{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    padding: .5rem 2rem .5rem 2rem;
+    .logo{
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        font-size: 1.7vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: .3rem 1rem .3rem 1rem;
+        background-color: #1F1D1D;
+    }
+    li a{
+        text-decoration: none;
+        color: inherit;
+    }
+    li a:hover{
+        text-decoration: underline;
+    }
+
+}
+
+.hero-content{
+    height: 80%;
+}
+
+.hero-content h1{
+    mix-blend-mode: difference;
+    opacity: 41%;
+    color: #ffff;
+    font-size: 18vw;
+    line-height: 18vw;
+    text-transform: uppercase;
+    padding-top: 2vw;
+    padding-left: 1vw;
+}
+.hero-content h1 span{
+    opacity: 74%;
+    mix-blend-mode: normal;
+}
+
+.navi{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    video{
+        height: 13vw;
+        border-radius: .5vw;
+    }
+    p{
+        font-size: 1vw;
+        width: 18%;
+    }
+}
+
+.page-2{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .page2-text{
+        width: 100%;
+        p{
+            font-size: .9vw;
+            font-weight: 600;
+            width: 30%;
+            margin-left: 30%;
+            margin-top: 2vw;
+        }
+    }
+    h2{
+        font-size: 3vw;
+        font-weight: 300;
+        width: 75%;
+        margin: auto;
+    }
+}
